@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | IP Address Tracker</title>
+</head>
+<body>
+  <div class="all">
+    <header class="header">
+      <div class="header__title">IP Address Tracker</div>
+      <form class="input">
+        <input class="input__text" type="text" placeholder="Search for any IP address or domain">
+        <input class="input__submit" type="submit" value=">">
+      </form>
+    </header>
+    <main>
+      <div class="location-info">
+        <div class="location-info__column">
+          <div class="location-info__title">IP ADDRESS</div>
+          <div class="location-info__ip-address">192.224.367.483</div>
+        </div>
+        <div class="location-info__column">
+          <div class="location-info__title">LOCATION</div>
+          <div class="location-info__location"></div>
+        </div>
+        <div class="location-info__column">
+          <div class="location-info__title">TIMEZONE</div>
+          <div class="location-info__timezone"></div>
+        </div>
+        <div class="location-info__column">
+          <div class="location-info__title">ISP</div>
+          <div class="location-info__isp"></div>
+        </div>
+      </div>
+      <div id="map"></div>
+    </main>
+    <!-- Timezone
+      UTC add offset value dynamically using the API -->
+    <footer class="footer">
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Simona Lorenc</a>.
+      </div>
+    </footer>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+  <script src="main.js"></script>
+</body>
+</html>
