@@ -38,6 +38,12 @@ body {
   margin: 30px;
 }
 
+@media only screen and (max-width: 850px) {
+  .header .header__title {
+    font-size: 30px;
+  }
+}
+
 .input {
   display: flex;
   min-width: 500px;
@@ -59,6 +65,13 @@ body {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   border: none;
+}
+
+@media only screen and (max-width: 850px) {
+  .input {
+    min-width: 300px;
+    width: 85%;
+  }
 }
 
 .location-info {
@@ -85,7 +98,7 @@ body {
 
 .location-info .location-info__title {
   font-size: 11px;
-  font-weight: 500;
+  font-weight: 700;
   color: var(--color-second);
   letter-spacing: 1px;
 }
@@ -94,6 +107,44 @@ body {
   margin-top: 10px;
   font-size: 20px;
   font-weight: 500;
+}
+
+.location-info .location-info__timezone {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.location-info .location-info__location {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.location-info .location-info__isp {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 850px) {
+  .location-info {
+    flex-direction: column;
+    width: 85%;
+    min-width: 400px;
+    min-height: 100px;
+    top: 190px;
+    justify-content: center;
+    align-items: center;
+  }
+  .location-info .location-info__column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    margin: 15px 0px 15px 15px;
+    border-right: none;
+  }
 }
 
 #map {
