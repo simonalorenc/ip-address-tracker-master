@@ -62,23 +62,12 @@ function renderInfo() {
             ispElement.innerHTML = json.isp
             x = json.location.lat
             y = json.location.lng
-            console.log(json.location.lng + ' ' + json.location.lat)
+            let newView = [x, y]
+            map.setView(newView, 13)
         })
 }
 
-function setMap() {
-    const map = L.map('map').setView([x, y], 13);
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
-    console.log('maaap')
-}
-
-submitBtn.addEventListener('click', () => {
-    renderInfo()
-    setMap()
-})
+submitBtn.addEventListener('click', renderInfo)
 
 
 
