@@ -17,10 +17,10 @@ Users should be able to:
 
 <p align="center">
     <img
-  src="imagess/leaflet_1.png"
+  src="/imagess/leaflet_1.png"
   width="300px">
     <img
-  src="imagess/leaflet_2.png"
+  src="/imagess/leaflet_2.png"
   width="300px">    
 </p>
 
