@@ -1,3 +1,5 @@
+import { key } from "./api-key.js";
+
 let x
 let y
 
@@ -19,9 +21,7 @@ const timezoneElement = document.querySelector('.location-info__timezone')
 const ispElement = document.querySelector('.location-info__isp')
 
 const API = 'https://geo.ipify.org/api/v2'
-const key = 'at_ieLuCAOtfnVf2paN9Bu5C1R01hosF'
-
-
+console.log(key)
 
 function renderInfo() {
     const API_MAP = API + '/country,city?'
